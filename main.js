@@ -12,8 +12,6 @@ let User = {
   statusUser: function () {
     if (this.Available) {
       console.log(`The User is Avaliable to work`);
-    } else {
-      console.log(`The User is NOT Avaliable to work`);
     }
   },
   address: {
@@ -38,10 +36,11 @@ console.log(`The User ID ${User.id}`);
 
 delete User.email;
 console.log("The User Detail After Delete the Email" + JSON.stringify(User));
-User.statusUser = true;
+User.Available = true;
 
 //5
-console.log(`The User Status ${User.statusUser}`);
+console.log("The User Status");
+User.statusUser();
 
 //6
 console.log("The User Address");
