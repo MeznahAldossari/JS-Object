@@ -42,11 +42,11 @@ let Names = characters.map((element) => {
   }
 });
 //==
-let Mass = characters.map((element) => {
-  if (element.mass > 50) {
-    console.log(`Gender: ${element.gender}`);
-  }
-});
+// let Mass = characters.map((element) => {
+//   if (element.mass > 50) {
+//     console.log(`Gender: ${element.gender}`);
+//   }
+// });
 
 let Gender = characters.filter((element) => {
   if (element.mass > 50) {
@@ -77,7 +77,7 @@ console.log("____________");
 //==
 let Males = characters.map((element) => {
   if (element.gender == "male") {
-    console.log(`Name: ${element.name}`);
+    `Name: ${element.name} - Height: ${element.height} - Gender: ${element.gender} - Mass: ${element.mass} - eye color: ${element.eye_color}`;
   }
 });
 
