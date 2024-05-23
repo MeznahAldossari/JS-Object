@@ -10,7 +10,7 @@ let User = {
   id: "321",
   Available: false,
   statusUser: function () {
-    if (this.false) {
+    if (this.Available) {
       console.log(`The User is Avaliable to work`);
     } else {
       console.log(`The User is NOT Avaliable to work`);
@@ -38,7 +38,7 @@ console.log(`The User ID ${User.id}`);
 
 delete User.email;
 console.log("The User Detail After Delete the Email" + JSON.stringify(User));
-User.statusUser = "Buys";
+User.statusUser = true;
 
 //5
 console.log(`The User Status ${User.statusUser}`);
