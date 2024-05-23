@@ -54,7 +54,7 @@ let Gender = characters.filter((element) => {
   }
 });
 console.log("====");
-
+console.log("____________");
 Gender.forEach((element) => {
   console.log(`Name: ${element.name} - Mass: ${element.mass} }`);
 });
@@ -68,13 +68,15 @@ height2.forEach((element) => {
     `Name: ${element.name} - Height: ${element.height} - Gender: ${element.gender} - Mass: ${element.mass} - eye color: ${element.eye_color}`
   );
 });
-console.log("____________");
+
 // let Persons = characters.map((element) => {
 //   if (element.height < 200) {
 //     console.log(`Character with Height < 200: ${element.name}`);
 //   }
 // });
-//==
+
+//===============
+console.log("===============");
 let Males = characters.map((element) => {
   if (element.gender == "male") {
     `Name: ${element.name} - Height: ${element.height} - Gender: ${element.gender} - Mass: ${element.mass} - eye color: ${element.eye_color}`;
